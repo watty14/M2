@@ -29,11 +29,13 @@ public class Person4 {
      * @param input the string to be modified
      * @return the modified string
      */
-    private String calc(String input) {
-      //Person 1 put your implementation here
-      return null;
-    }
-    
+  private String calc(String input) {
+      String newInput = "";
+      for(int i = 0; i<input.length(); i++) {
+        newInput = newInput + input.charAt(i) +1;
+      }
+      return newInput;
+  }
     /**
      * Return a string rep of this object
      * that varies with an input string
