@@ -6,3 +6,8 @@ defaultTasks ['jar']
 dependencies {
 	compile files('./lib/resources.jar')
 }
+
+jar {
+	mainfest { atrributes 'Main-Class': main ClassName, 'Class-Path':
+	'../../lib/resources.jar' }
+}
