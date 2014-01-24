@@ -10,5 +10,5 @@ dependencies {
 
 jar {
 	manifest { attributes 'Main-Class': mainClassName, 'Class-Path':
-	'../../lib/resources.jar' }
+	'lib/resources.jar' }
 }
