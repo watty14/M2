@@ -9,6 +9,6 @@ dependencies {
 }
 
 jar {
-	mainfest { attributes 'Main-Class': mainClassName, 'Class-Path':
+	manifest { attributes 'Main-Class': mainClassName, 'Class-Path':
 	'../../lib/resources.jar' }
 }
