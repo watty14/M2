@@ -1,13 +1,15 @@
 apply plugin: 'java'
-apply plugin: 'application'
 apply plugin: 'eclipse'
+apply plugin: 'application'
+
 mainClassName = "edu.gatech.oad.antlab.pkg1.AntLabMain"
-defaultTasks ['jar']
+defaultTasks = ['jar']
+
 dependencies {
-	compile files('./lib/resources.jar')
+    compile files('./lib/resources.jar')
 }
 
 jar {
-	mainfest { atrributes 'Main-Class': main ClassName, 'Class-Path':
-	'../../lib/resources.jar' }
+    manifest { attributes 'Main-Class': mainClassName, 'Class-Path':
+    '../../lib/resources.jar' }
 }
