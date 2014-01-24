@@ -34,15 +34,15 @@ public class Person2 {
 	private String calc(String input) {
 	  //Person 2 put your implementation here
 	  List<Character> characters = new ArrayList<Character>();  
-             for(char c : input.toCharArray()) {  
-            	characters.add(c);  
-             }  
-          Collections.shuffle(characters);  
-          StringBuilder sb = new StringBuilder();  
-          for(char c : characters) {  
-            sb.append(c);  
-          }
-          return sb.toString();
+      for(char chr : input.toCharArray()) {  
+         characters.add(chr);
+      }  
+      Collections.shuffle(characters);  
+      StringBuilder sb = new StringBuilder();  
+      for(char chr : characters) {  
+         sb.append(chr);
+      }
+      return sb.toString();
 	}
 	/**
 	 * Return a string rep of this object
